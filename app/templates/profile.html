@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block main %}
+        <div class="entire">
+            <div class="pics">
+                <img src="{{ url_for('static', filename='GabrielleScott.jpg') }}" alt="picture  of gabrielle scott">
+                <h1>Gabrielle Scott</h1>
+                <p>@gscott</p>
+                <p>Kingston, Jamaica</p>
+                <p>{{ date }}</p>
+            </div>
+            <div class="main">
+                <p>Hi, my name is Gabrielle Scott, I am a junior software engineer. DM for all business queries.</p>
+                <div class="blog_info">
+                    <div class="numbers">
+                        <p><b>10</b></p>
+                        <p>Posts</p>
+                    </div>
+    
+                    <div class="numbers">
+                        <p><b>673</b></p>
+                        <p>Following</p>
+                    </div>
+    
+                    <div class="numbers">
+                        <p><b>1.5k</b></p>
+                        <p>Followers</p>  
+                    </div>
+                </div>
+
+                <button>Follow</button>
+                
+            </div>
+        </div>
+{% endblock %}
